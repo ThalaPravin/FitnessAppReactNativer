@@ -3,3 +3,4 @@ export const sparkler = require('./icons/sparkler.png');
 export const arrow = require('./icons/arrow.png');
 export const checks = require('./icons/checks.png');
 export const splash = require('./images/Splash.png');
+export const builder = require('./images/builder.jpg');

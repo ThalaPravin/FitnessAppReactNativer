@@ -2,10 +2,11 @@ import {View, Text, Image} from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
+import { builder } from '../assets';
 
 const RestScreen = () => {
   let timer = 0;
-  const [timeLeft, setTimeLeft] = useState(3);
+  const [timeLeft, setTimeLeft] = useState(5);
   const navigation = useNavigation();
   const startTime = () => {
     setTimeout(() => {
@@ -26,10 +27,7 @@ const RestScreen = () => {
   return (
     <SafeAreaView>
       <Image
-       
-        source={{
-          uri: 'https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_500:300,c_fit/dpr_2/image/carefit/bundle/CF01032_magazine_2.png',
-        }}
+        source={builder}
         style={{width: '100%', height: 420}}
       />
       <Text

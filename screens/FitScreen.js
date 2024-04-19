@@ -22,15 +22,16 @@ const FitScreen = () => {
     workout,
   } = useContext(FitnessItems);
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor:'#F9F9ED', height:'100%' }}>
       <Image
-        style={{height: 380, width: '100%'}}
+        style={{height: 380, width: '100%',marginTop:1}}
         source={{uri: current?.image}}
       />
       <Text
         style={{
           fontWeight: 'bold',
           fontSize: 30,
+          color:'black',
           marginRight: 'auto',
           marginLeft: 'auto',
           marginTop: 30,
@@ -44,7 +45,7 @@ const FitScreen = () => {
           marginRight: 'auto',
           marginLeft: 'auto',
           marginTop: 20,
-          color: 'black',
+          color: 'red',
         }}>
         x{current?.sets}
       </Text>
@@ -67,7 +68,7 @@ const FitScreen = () => {
           <Text
             style={{
               textAlign: 'center',
-              fontSize: 20,
+              fontSize: 10,
               fontWeight: '600',
               color: 'black',
             }}>
@@ -88,7 +89,7 @@ const FitScreen = () => {
             }, 2000);
           }}
           style={{
-            backgroundColor: 'red',
+            background: 'red',
             padding: 10,
             justifyContent: 'center',
             alignItems: 'center',
@@ -98,15 +99,24 @@ const FitScreen = () => {
             marginTop: 30,
             height: 55,
           }}>
+            <View style={{ backgroundColor:'green',backgroundColor: 'green',
+              padding: 10,
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '70%',
+              alignSelf: 'center',
+              borderRadius: 20,
+              height: 55, }} > 
           <Text
             style={{
               textAlign: 'center',
               fontSize: 20,
-              fontWeight: '600',
-              color: 'black',
+              fontWeight: '900',
+              color: 'white',
             }}>
             Done
           </Text>
+          </View>
         </Pressable>
       )}
 
@@ -129,7 +139,7 @@ const FitScreen = () => {
             }, 2000);
           }}
           style={{
-            backgroundColor: 'green',
+            backgroundColor: 'red',
             padding: 10,
             justifyContent: 'center',
             alignItems: 'center',
@@ -143,7 +153,7 @@ const FitScreen = () => {
               textAlign: 'center',
               fontSize: 20,
               fontWeight: '600',
-              color: 'black',
+              color: 'white',
             }}>
             PREV
           </Text>
@@ -168,7 +178,7 @@ const FitScreen = () => {
                 textAlign: 'center',
                 fontSize: 20,
                 fontWeight: '600',
-                color: 'black',
+                color: 'white',
               }}>
               SKIP
             </Text>
@@ -182,7 +192,7 @@ const FitScreen = () => {
               }, 2000);
             }}
             style={{
-              backgroundColor: 'green',
+              backgroundColor: 'red',
               padding: 10,
               justifyContent: 'center',
               alignItems: 'center',
@@ -196,7 +206,7 @@ const FitScreen = () => {
                 textAlign: 'center',
                 fontSize: 20,
                 fontWeight: '600',
-                color: 'black',
+                color: 'white',
               }}>
               SKIP
             </Text>
